@@ -1,143 +1,125 @@
 /* https://www.periodismo.com/2023/05/08/el-desfile-de-patos-en-una-escuela-que-se-hizo-viral/ */
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* HEADER */
 .header {
-    box-shadow: 0px 0 13px 0px #aaa;
-    margin-bottom: 30px;
+  box-shadow: 0px 0 13px 0px #aaa;
+  margin-bottom: 30px;
 }
-
 .header div {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0;
-    max-width: 900px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  max-width: 900px;
+  margin: auto;
 }
-
-.header img {
-    width: 250px;
+.header div img {
+  width: 250px;
 }
-
-.nav {
-    text-transform: uppercase;
-    padding: 7px;
+.header div .nav {
+  text-transform: uppercase;
+  padding: 7px;
 }
-
-.nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
+.header div .nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.nav li {
-    margin: 0 20px;
+.header div .nav ul li {
+  margin: 0 20px;
 }
-
-.nav a {
-    color: #a00606;
-    text-decoration: none;
+.header div .nav ul li a {
+  color: #a00606;
+  text-decoration: none;
+}
+.header div .nav ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 /* MAIN INDEX */
-
 #main-index {
-    font-family: sans-serif;
-    max-width: 1050px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-areas:
-        "titular banana"
-        "noticia banana"
-        "noticia ."
-        "noticia .";
+  font-family: sans-serif;
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: "titular banana" "noticia banana" "noticia ." "noticia .";
 }
 
 .titular {
-    grid-area: titular;
+  grid-area: titular;
 }
 
 .aside {
-    grid-area: banana;
+  grid-area: banana;
 }
 
 .noticia {
-    grid-area: noticia;
+  grid-area: noticia;
 }
 
 #main-index h1 {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 #main-index .categoria {
-    background-color: #DD3333;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 10px;
-    display: inline;
-    padding: 5px 10px;
-    border-radius: 5px;
+  background-color: #DD3333;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 #main-index .fecha {
-    font-size: 9px;
+  font-size: 9px;
 }
 
 #main-index img {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 #main-index p {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 #main-index iframe {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 /*ASIDE*/
 .aside h3 {
-    background-color: rgb(48, 48, 48);
-    color: white;
-    padding: 15px;
-
+  background-color: rgb(48, 48, 48);
+  color: white;
+  padding: 15px;
 }
 
 .aside p {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .aside .email {
-    width: 100px;
-}
-
-/* FOOTER */
-
-.footer {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 30px;
-    font-family: sans-serif;
+  width: 100px;
 }
 
 /*MOBILE LAST*/
-
 @media (max-width: 1000px) {
-    #main-index {
-        grid-template-columns: 100%;
-        grid-template-areas:
-            "titular"
-            "noticia"
-            "noticia"
-            "banana"
-            "banana";
-    }
+  #main-index {
+    grid-template-columns: 100%;
+    grid-template-areas: "titular" "noticia" "noticia" "banana" "banana";
+  }
 }
+/* FOOTER */
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  font-family: sans-serif;
+}/*# sourceMappingURL=style.css.map */

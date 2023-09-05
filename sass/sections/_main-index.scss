@@ -1,0 +1,87 @@
+/* MAIN INDEX */
+
+#main-index {
+    font-family: sans-serif;
+    max-width: 1050px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+        "titular banana"
+        "noticia banana"
+        "noticia ."
+        "noticia .";
+}
+
+.titular {
+    grid-area: titular;
+}
+
+.aside {
+    grid-area: banana;
+}
+
+.noticia {
+    grid-area: noticia;
+}
+
+#main-index h1 {
+    margin: 20px 0;
+}
+
+#main-index .categoria {
+    background-color: #DD3333;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#main-index .fecha {
+    font-size: 9px;
+}
+
+#main-index img {
+    margin: 30px 0;
+}
+
+#main-index p {
+    margin: 20px 0;
+}
+
+#main-index iframe {
+    margin: 20px 0;
+}
+
+/*ASIDE*/
+.aside h3 {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 15px;
+
+}
+
+.aside p {
+    margin: 30px 0;
+}
+
+.aside .email {
+    width: 100px;
+}
+/*MOBILE LAST*/
+
+@media (max-width: 1000px) {
+    #main-index {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "titular"
+            "noticia"
+            "noticia"
+            "banana"
+            "banana";
+    }
+}
