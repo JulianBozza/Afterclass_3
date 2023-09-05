@@ -1,6 +1,13 @@
+// TIPOGRAFIA + VARIABLES + EXTEND
+@import './assets/tipografia';
+@import './assets/extend';
+@import './assets/color';
+@import './assets/bootstrap-customizado';
+
 @import './assets/reset';
 @import './sections/header';
 @import './sections/main-index';
 @import './sections/footer';
 
-
+// BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap";

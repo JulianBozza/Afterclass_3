@@ -28,6 +28,7 @@
 
 #main-index h1 {
     margin: 20px 0;
+    font-family: $titulares;
 }
 
 #main-index .categoria {
@@ -58,21 +59,30 @@
 }
 
 /*ASIDE*/
-.aside h3 {
-    background-color: rgb(48, 48, 48);
-    color: white;
-    padding: 15px;
+.aside {
+    h3 {
+        background-color: rgb(48, 48, 48);
+        color: white;
+        padding: 15px;
+    }
 
+    p {
+        margin: 30px 0;
+    }
+
+    form {
+        .email {
+            width: 100px;
+        }
+        .enviar {
+            @extend .destaque
+        }
+    }
 }
 
-.aside p {
-    margin: 30px 0;
-}
 
-.aside .email {
-    width: 100px;
-}
-/*MOBILE LAST*/
+
+
 
 @media (max-width: 1000px) {
     #main-index {
